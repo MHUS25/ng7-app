@@ -10,7 +10,7 @@ export class HomeComponent implements OnInit {
 
   h1Style: boolean = false;
 
-  constructor() { }
+  constructor(private data: DataService) { }
 
   ngOnInit() {
   }
