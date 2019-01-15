@@ -10,7 +10,8 @@ export class ContactComponent implements OnInit {
 
   messageForm: FormGroup;
 
-  constructor() { }
+  constructor(private: formBuilder: FormBuilder) {
+  }
 
   ngOnInit() {
   }
