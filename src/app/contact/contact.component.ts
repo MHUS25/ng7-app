@@ -9,12 +9,18 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class ContactComponent implements OnInit {
 
   messageForm: FormGroup;
+  submitted = false;
+  success = false;
 
   constructor(private: formBuilder: FormBuilder) {
     this.messageForm = this.formBuilder.group({
       name: ['', Validators.required],
       message: ['', Validators.required]
     })
+  }
+
+  onSubmit() {
+    this.submitted = true;
   }
 
   ngOnInit() {
