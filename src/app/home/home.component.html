@@ -2,5 +2,7 @@
 
 <ul *ngIf="users">
   <li *ngFor="let user of users.data">
+    <img [src]="user.avatar">
+    <p>{{ user.first_name }} {{ ser.first_name }}</p>
   </li>
 </ul>
