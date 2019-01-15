@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class DataService {
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
   firstClick() {
     return console.log('clicked')
